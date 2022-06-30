@@ -139,6 +139,7 @@ fn test_ttyport_set_standard_baud() {
     any(
         target_os = "ios",
         all(target_os = "linux", target_env = "musl"),
+        target_os = "illumos",
         target_os = "macos"
     ),
     ignore
